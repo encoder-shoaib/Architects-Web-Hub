@@ -2,9 +2,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.work-sans {
+.work-sans{
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight:400px;
     font-style: normal;
   }
+
+
+  /* shared styles  */
+  .main{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+.d-flex{
+  display: flex;
+}
+
+.button-primary{
+  max-width: 180px;
+  padding:20px 25px ;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 144, 14, 1);
+  color: white;
+}
+
+/* dark 02  */
+.text-gray{
+  color: #424242;
+}
+/* dark 03  */
+.text-light-gray{
+  color:#727272 ;
+}
+
+  /* header style  */
+.bg-light{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+  /* navbar style  */
+  .navbar{
+    justify-content: space-between;
+  }
+  .navbar , .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .navbar h3{
+    font-size: 3rem;
+  }
+.nav-links{
+  gap: 30px;
+  align-items: center;
+}
+.nav-item{
+  list-style: none;
+  
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* banner related style  */
+.banner-content{
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-content h1{
+  font-weight: 700;
+  font-size: 4rem;
+}
+.banner-content button{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.banner img{
+  margin-top: 50px;
+  width: 100%;
+  height: 700;
+}
+
+/* Our-Features */
+.team {
+  align-items: center;
+  gap: 73px;
+  margin-top: 81px;
+}
+.team-works{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+.team-works img{
+  max-width: 100%;
+  /* height: 290px; */
+  border-radius: 8px;
+}
+.team-work-text{
+  max-width:537px ;
+}
+.features{
+  color: rgba(255, 144, 14, 1);
+
+}
+
+/* lovely-section */
+.lovely-section{
+  margin-top: 130px;
+  gap: 54px;
+}
+.love-features{
+  max-width: 586px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.love-text{
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  border-radius: 5px;
+}
+.love-img img{
+  width: 100%;
+  border-radius: 8px;
+}
+/*Responsive media Query  */
+
+@media screen and (max-width:567px) {
+  .nav-links{
+    flex-direction: column;
+  }
+}

@@ -131,6 +131,20 @@
   width: 100%;
   border-radius: 8px;
 }
+.lovly-button{
+  font-size: 4rem;
+  font-weight: 700;
+  background-color:  rgba(255, 144, 14, 1);
+  border: none;
+  color: white;
+  margin-top: -100px;
+  margin-left: -80px;
+}
+.Experience{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
 /* some facts  */
 .some-fact p{
@@ -161,6 +175,22 @@
 
 }
 
+.sponsor-tex{
+  margin-bottom: 50px;
+  text-align: center;
+} 
+.sponsor-section{
+  margin-top: 180px;
+}
+.sponsor-img{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 155px;
+}
+.sponsor-img img{
+  width: 100%;
+  filter: grayscale(100);
+}
 
 /*Responsive media Query  */
 
@@ -179,5 +209,14 @@
     grid-template-columns: repeat(1,1fr);
     margin-left: 10px;
     gap: 40px;
+  }
+  .sponsor-img{
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .lovly-button{
+    margin: 0 auto;
   }
 }
